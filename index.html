@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Majo — Studio di design e personalizzazione on-demand</title>
+<meta name="description" content="Creative Majo: magliette, tazze, adesivi, cake topper 3D, borracce e regali personalizzati. Nessun ordine minimo. Scrivici su WhatsApp.">
+<meta property="og:title" content="Creative Majo — Studio di design e personalizzazione on-demand">
+<meta property="og:description" content="Ogni idea merita di prendere forma. Personalizzazione per eventi, business e lifestyle. Nessun ordine minimo.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/evento_pijama_coordenado.jpg">
+<meta name="theme-color" content="#F5E4D0">
+<link rel="icon" type="image/png" href="assets/symbol_green.png">
+<style>
+body{margin:0}
+@font-face{font-family:'Moraine Parnley';font-weight:400;font-style:normal;font-display:swap;src:local('Moraine Parnley'),local('Moraine Parnley Regular'),url('assets/fonts/MoraineParnley-Regular.woff2') format('woff2'),url('assets/fonts/MoraineParnley-Regular.otf') format('opentype'),url('assets/fonts/MoraineParnley-Regular.ttf') format('truetype')}
+.chip{min-height:44px;padding:0 20px;border-radius:999px;border:2px solid rgba(5,60,54,.4);background:transparent;color:#053C36;font-family:inherit;font-size:15px;font-weight:500;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed="true"]{background:#CDABF7;border-color:#CDABF7;font-weight:600}
+.chip:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid #053C36;outline-offset:3px}
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Caveat:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+.btn{transition:transform .25s ease, box-shadow .25s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(5,60,54,.22)}
+.zoom img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover img{transform:scale(1.07)}
+.card{transition:transform .35s ease, box-shadow .35s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 24px 48px rgba(5,60,54,.18)}
+.card .arrow{transition:transform .3s ease}
+.card:hover .arrow{transform:translateX(8px)}
+.navlink{transition:color .2s ease}
+.navlink:hover{color:#D35A3B}
+.chip:hover{transform:translateY(-2px)}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.float-a{animation:floaty 6s ease-in-out infinite}
+.float-b{animation:floaty 7.5s ease-in-out infinite;animation-delay:-2s}
+.float-c{animation:floaty 5.5s ease-in-out infinite;animation-delay:-4s}
+.wobble{animation:wobble 4s ease-in-out infinite}
+.spin-slow{animation:spin 30s linear infinite}
+.marquee{animation:marquee 40s linear infinite}
+.pulse::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #25D366;animation:pulse 2.2s ease-out infinite;pointer-events:none}
+.pat-green{background:url(assets/pattern_green.jpg) center/cover no-repeat}
+@keyframes rise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes wobble{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(-2deg) scale(1.06)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes pulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+@keyframes revealIn{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){
+.reveal{animation:revealIn linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+}
+@media (max-width:820px){
+.navlinks{display:none !important}
+.gal{grid-template-columns:minmax(0,1fr) !important}
+.gal figure{grid-column:auto !important}
+.fab-label{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+*{animation:none !important;transition:none !important}
+}
+</style>
+</head>
+<body>
+<div id="top" style="font-family:'Poppins',system-ui,sans-serif;background:#F5E4D0;color:#053C36;overflow-x:clip;line-height:1.6">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(245,228,208,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(5,60,54,0.1)">
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px);box-sizing:border-box;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<a href="#top" aria-label="Creative Majo, torna all'inizio" style="display:flex;align-items:center"><img src="assets/symbol_green.png" alt="Creative Majo" style="height:50px;width:auto;display:block"></a>
+<nav class="navlinks" aria-label="Sezioni" style="display:flex;gap:32px;align-items:center">
+<a class="navlink" href="#servizi" style="text-decoration:none;color:#053C36;font-weight:500;font-size:15px">Servizi</a>
+<a class="navlink" href="#come-funziona" style="text-decoration:none;color:#053C36;font-weight:500;font-size:15px">Come funziona</a>
+<a class="navlink" href="#contatto" style="text-decoration:none;color:#053C36;font-weight:500;font-size:15px">Contatti</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="position:relative;overflow:hidden">
+<div style="position:relative;max-width:1200px;margin:0 auto;padding:clamp(40px,6vw,88px) clamp(20px,4vw,48px) clamp(56px,7vw,104px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,5vw,72px)">
+
+<div style="flex:1 1 440px;min-width:0">
+<div class="rise" style="display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:#053C36;color:#F5E4D0;font-size:13px;font-weight:600;letter-spacing:0.02em">
+<span style="width:8px;height:8px;border-radius:50%;background:#D35A3B;display:inline-block"></span>
+Studio di design e personalizzazione on-demand
+</div>
+<h1 class="rise" style="margin:24px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-size:clamp(54px,7.6vw,100px);line-height:0.98;font-weight:400;animation-delay:.12s">Ogni idea merita di prendere <span style="color:#D35A3B">forma.</span></h1>
+<p class="rise" style="margin:24px 0 0;font-size:clamp(17px,1.6vw,20px);max-width:520px;animation-delay:.24s">Dalla plastica ecologica al vinile, dall'abbigliamento all'oggettistica: trasformiamo la tua immaginazione in realtà. Senza limiti alla creatività e <strong>senza nessun ordine minimo</strong>.</p>
+<div class="rise" style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px;animation-delay:.36s">
+<a class="btn" href="https://wa.me/393339977640?text=Ciao%20Majo!%20Ho%20un'idea%20da%20realizzare." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;background:#25D366;color:#053C36;font-weight:600;font-size:17px;text-decoration:none">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+<span>Scrivici su WhatsApp</span>
+</a>
+</div>
+<div class="rise" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:10px;animation-delay:.48s">
+<span style="padding:6px 14px;border-radius:999px;background:#FBF3E8;border:1px solid rgba(5,60,54,.15);font-size:13px;font-weight:500">Nessun ordine minimo</span>
+<span style="padding:6px 14px;border-radius:999px;background:#FBF3E8;border:1px solid rgba(5,60,54,.15);font-size:13px;font-weight:500">Su misura</span>
+<span style="padding:6px 14px;border-radius:999px;background:#FBF3E8;border:1px solid rgba(5,60,54,.15);font-size:13px;font-weight:500">Plastica ecologica 3D</span>
+<span style="padding:6px 14px;border-radius:999px;background:#FBF3E8;border:1px solid rgba(5,60,54,.15);font-size:13px;font-weight:500">Vinile ad alta resistenza</span>
+</div>
+</div>
+
+<!-- Collage -->
+<div style="flex:1 1 440px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:100%;max-width:560px;aspect-ratio:1/1.08">
+<div class="float-a" style="position:absolute;left:36%;top:0;width:62%;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:0 24px 48px rgba(5,60,54,.2)">
+<img src="assets/evento_pijama_coordenado.jpg" alt="Amiche in magliette coordinate Creative Majo durante un pigiama party" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div class="float-b" style="position:absolute;left:0;top:54%;width:54%;aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid #F5E4D0;box-shadow:0 20px 40px rgba(5,60,54,.2)">
+<img src="assets/lifestyle_decor.jpg" alt="Logo Majo in plastica 3D colorata su una mensola" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div class="float-c" style="position: absolute; left: 2%; top: 8%; width: 30%; aspect-ratio: 1/1; border-radius: 50%; overflow: hidden; box-shadow: 0 16px 32px rgba(5,60,54,.18)">
+<img src="assets/symbol_circle.jpg" alt="Simbolo Majo" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div class="wobble" style="position:absolute;right:-2%;bottom:2%;width:36%;aspect-ratio:1/1;border-radius:50%;background:#053C36;color:#F5E4D0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;box-sizing:border-box;box-shadow:0 16px 32px rgba(5,60,54,.35)">
+<span style="font-size:clamp(11px,1.5vw,15px);font-weight:600;line-height:1.2">Vuoi 5 magliette per un pigiama party?</span>
+<span style="font-family:'Moraine Parnley','Caveat',cursive;font-size:clamp(20px,2.8vw,32px);font-weight:400;line-height:1;margin-top:4px;color:#CDABF7">Lo facciamo!</span>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MARQUEE -->
+<section aria-label="Cosa possiamo personalizzare" style="background:#D35A3B;color:#F5E4D0;overflow:hidden;padding:18px 0">
+<div class="marquee" style="display:flex;width:max-content;align-items:center">
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Magliette coordinate</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Tazze su misura</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Adesivi in vinile</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Cake topper 3D</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Borracce personalizzate</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Biglietti da visita</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Insegne in rilievo</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Grembiuli e cappellini</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Gadget per gli invitati</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Regali unici</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Magliette coordinate</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Tazze su misura</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Adesivi in vinile</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Cake topper 3D</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Borracce personalizzate</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Biglietti da visita</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Insegne in rilievo</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Grembiuli e cappellini</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Gadget per gli invitati</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+<div style="display:flex;align-items:center;gap:28px;padding-right:28px;white-space:nowrap">
+<span style="font-size:20px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase">Regali unici</span>
+<span style="width:14px;height:14px;background:#CDABF7;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);display:inline-block" aria-hidden="true"></span>
+</div>
+
+</div>
+</section>
+
+<!-- PERCHÉ MAJO -->
+<section style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,104px) clamp(20px,4vw,48px) 0;box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:32px;border:1px solid rgba(5,60,54,.1)">
+<div style="width:64px;height:64px;background:#D35A3B;border-radius:999px 999px 8px 8px;margin-bottom:20px" aria-hidden="true"></div>
+<h3 style="margin:0 0 8px;font-size:22px;font-weight:600">Nessun ordine minimo</h3>
+<p style="margin:0;font-size:16px">Anche pochi pezzi: la tua creatività non ha limiti. Produzione on-demand che cresce insieme a te.</p>
+</div>
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:32px;border:1px solid rgba(5,60,54,.1)">
+<div style="width:64px;height:64px;background:#CDABF7;border-radius:50%;margin-bottom:20px" aria-hidden="true"></div>
+<h3 style="margin:0 0 8px;font-size:22px;font-weight:600">Personalizzazione totale</h3>
+<p style="margin:0;font-size:16px">Frasi, illustrazioni, loghi e colori: ogni dettaglio è pensato su misura per te e per il tuo momento.</p>
+</div>
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:32px;border:1px solid rgba(5,60,54,.1)">
+<div style="width:64px;height:64px;background:#E6739C;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);margin-bottom:20px" aria-hidden="true"></div>
+<h3 style="margin:0 0 8px;font-size:22px;font-weight:600">Introvabile nei negozi</h3>
+<p style="margin:0;font-size:16px">Un regalo perfetto e unico, che non trovi nei negozi tradizionali. Se puoi immaginarlo, possiamo crearlo.</p>
+</div>
+</div>
+</section>
+
+<!-- SCEGLI IL PERCORSO -->
+<section id="servizi" style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px) clamp(24px,4vw,48px);box-sizing:border-box">
+<div class="reveal" style="text-align:center;max-width:680px;margin:0 auto 48px">
+<div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#053C36">I nostri servizi</div>
+<h2 style="margin:12px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-size:clamp(46px,6vw,80px);line-height:1;font-weight:400">Cosa vuoi <span style="color:#D35A3B">creare</span> oggi?</h2>
+<p style="margin:16px 0 0;font-size:18px">Scegli il percorso che fa per te. Non trovi la tua idea? Parliamone: la realizziamo insieme.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+
+<a class="card reveal" href="#eventi" style="flex:1 1 300px;text-decoration:none;color:#F5E4D0;background:#053C36;border-radius:32px;overflow:hidden;display:flex;flex-direction:column">
+<div class="zoom" style="aspect-ratio:4/3;overflow:hidden">
+<img src="assets/evento_pijama_coordenado.jpg" alt="Magliette coordinate per un pigiama party" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:8px;flex:1">
+<span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#CDABF7">Creative Eventi</span>
+<span style="font-size:26px;font-weight:700;line-height:1.15">Rendi unici i tuoi momenti</span>
+<span style="font-size:16px">Feste, pigiama party, gite scolastiche ed eventi in generale.</span>
+<span style="margin-top:auto;padding-top:12px;font-weight:600;display:inline-flex;gap:8px;align-items:center">Scopri di più <span class="arrow">→</span></span>
+</div>
+</a>
+
+<a class="card reveal" href="#business" style="flex:1 1 300px;text-decoration:none;color:#053C36;background:#FBF3E8;border:3px solid #E6739C;border-radius:32px;overflow:hidden;display:flex;flex-direction:column">
+<div class="zoom" style="aspect-ratio:4/3;overflow:hidden">
+<img src="assets/business_embalagem.jpg" alt="Adesivi Majo applicati sul packaging" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:8px;flex:1">
+<span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Creative Business</span>
+<span style="font-size:26px;font-weight:700;line-height:1.15">Dai voce al tuo brand</span>
+<span style="font-size:16px">Soluzioni visive per piccole imprese e liberi professionisti.</span>
+<span style="margin-top:auto;padding-top:12px;font-weight:600;display:inline-flex;gap:8px;align-items:center">Scopri di più <span class="arrow">→</span></span>
+</div>
+</a>
+
+<a class="card reveal" href="#lifestyle" style="flex:1 1 300px;text-decoration:none;color:#053C36;background:#CDABF7;border-radius:32px;overflow:hidden;display:flex;flex-direction:column">
+<div class="zoom" style="aspect-ratio:4/3;overflow:hidden">
+<img src="assets/lifestyle_caderninho_personalizado.jpg" alt="Quaderno personalizzato Majo con adesivi" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+</div>
+<div style="padding:28px 28px 32px;display:flex;flex-direction:column;gap:8px;flex:1">
+<span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Creative Lifestyle</span>
+<span style="font-size:26px;font-weight:700;line-height:1.15">Oggetti unici, proprio come te</span>
+<span style="font-size:16px">Regali personalizzati e oggettistica per la vita di tutti i giorni.</span>
+<span style="margin-top:auto;padding-top:12px;font-weight:600;display:inline-flex;gap:8px;align-items:center">Scopri di più <span class="arrow">→</span></span>
+</div>
+</a>
+
+</div>
+</section>
+
+<!-- EVENTI -->
+<section id="eventi" style="background:#053C36;color:#F5E4D0;margin-top:clamp(40px,6vw,80px)">
+<div style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,64px);align-items:flex-start">
+
+<div class="reveal" style="flex:1 1 380px;min-width:0;max-width:520px">
+<span style="display:inline-block;padding:6px 16px;border-radius:999px;background:#F5E4D0;color:#053C36;font-size:13px;font-weight:600;letter-spacing:0.06em">Creative Eventi</span>
+<h2 style="margin:20px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-weight:400;font-size:clamp(52px,7vw,92px);line-height:0.95;color:#CDABF7">Rendi unici i tuoi momenti</h2>
+<p style="margin:24px 0 0;font-size:18px">Personalizzazione totale per feste, pigiama party, gite scolastiche ed eventi in generale.</p>
+<ul style="list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:17px">
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#CDABF7;margin-top:3px" aria-hidden="true"></span><span>Magliette e cappellini coordinati per gruppi</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#CDABF7;margin-top:3px" aria-hidden="true"></span><span>Borracce personalizzate per gite</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#CDABF7;margin-top:3px" aria-hidden="true"></span><span>Kit decorativi per feste</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#CDABF7;margin-top:3px" aria-hidden="true"></span><span>Cake topper in plastica rigida 3D</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#CDABF7;margin-top:3px" aria-hidden="true"></span><span>Gadget per gli invitati</span></li>
+</ul>
+<div style="margin-top:32px;padding:24px 28px;border-radius:24px;background:#F5E4D0;color:#053C36">
+<div style="font-size:18px;font-weight:600">Non serve ordinare grandi quantità.</div>
+<div style="font-size:18px;font-weight:600">Vuoi 5 magliette per un pigiama party?</div>
+<div style="font-family:'Moraine Parnley','Caveat',cursive;font-size:40px;font-weight:400;color:#D35A3B;line-height:1.1">Lo facciamo!</div>
+</div>
+</div>
+
+<div class="gal" style="flex:1.5 1 520px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+<figure class="zoom reveal" style="grid-column:1 / -1;margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:16/10">
+<img src="assets/evento_festa.jpg" alt="Torta di compleanno con cake topper 3D Majo e kit decorativi sulla tavola" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:16px;bottom:16px;background:rgba(245,228,208,0.95);color:#053C36;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600">Cake topper 3D e kit decorativi</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/evento_passeio.jpg" alt="Gruppo in gita con magliette coordinate e borracce personalizzate" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Gite e borracce</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/evento_pijama_coordenado.jpg" alt="Amiche in magliette coordinate durante un pigiama party" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Magliette coordinate</figcaption>
+</figure>
+</div>
+
+</div>
+</section>
+
+<!-- BUSINESS -->
+<section id="business" style="background:#F5E4D0">
+<div style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap-reverse;gap:clamp(32px,5vw,64px);align-items:flex-start">
+
+<div class="gal" style="flex:1.5 1 520px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/business_embalagem.jpg" alt="Adesivo Majo applicato su carta velina viola dentro una scatola" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Adesivi per il packaging</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/business_kit.jpg" alt="Tazza, biglietti da visita, adesivo e logo in rilievo Majo su una scrivania" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Tazze e biglietti da visita</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/business_staff.jpg" alt="Grembiule con logo Majo in una panetteria" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Grembiuli per lo staff</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/business_placa_24cm.jpg" alt="Insegna con logo Majo in rilievo sulla parete di un negozio" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Insegne 3D per il negozio</figcaption>
+</figure>
+</div>
+
+<div class="reveal" style="flex:1 1 380px;min-width:0;max-width:520px">
+<span style="display:inline-block;padding:6px 16px;border-radius:999px;background:#053C36;color:#F5E4D0;font-size:13px;font-weight:600;letter-spacing:0.06em">Creative Business</span>
+<h2 style="margin:20px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-weight:400;font-size:clamp(52px,7vw,92px);line-height:0.95;color:#D35A3B">Dai voce al tuo brand</h2>
+<p style="margin:24px 0 0;font-size:18px">Soluzioni visive per piccole imprese e liberi professionisti. L'ideale per chi vuole un'immagine professionale senza i vincoli delle grandi tipografie. <strong>Nessun ordine minimo!</strong></p>
+<ul style="list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:17px">
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Adesivi in vinile per il tuo packaging</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Abbigliamento per lo staff: t-shirt, grembiuli, cappellini con logo</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Tazze aziendali</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Biglietti da visita creativi</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Insegne e loghi in rilievo (plastica 3D) per il tuo negozio o bancone</span></li>
+</ul>
+<p style="margin:28px 0 0;font-size:19px;font-weight:600">Produzione on-demand che cresce insieme al tuo business.</p>
+</div>
+
+</div>
+</section>
+
+<!-- LIFESTYLE -->
+<section id="lifestyle" style="background:#CDABF7">
+<div style="max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);box-sizing:border-box">
+
+<div class="reveal" style="max-width:760px">
+<span style="display:inline-block;padding:6px 16px;border-radius:999px;background:#F5E4D0;color:#053C36;font-size:13px;font-weight:600;letter-spacing:0.06em">Creative Lifestyle</span>
+<h2 style="margin:20px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-weight:400;font-size:clamp(52px,7vw,92px);line-height:0.95;color:#053C36">Oggetti unici, proprio come te</h2>
+<p style="margin:24px 0 0;font-size:18px;max-width:600px">Creiamo regali personalizzati e oggettistica per la vita di tutti i giorni. <strong>Se puoi immaginarlo, possiamo crearlo.</strong></p>
+</div>
+
+<div class="gal" style="margin-top:40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+<figure class="zoom reveal" style="grid-column:1 / -1;margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:16/8">
+<img src="assets/lifestyle_acessorio.jpg" alt="Astuccio, quaderno e adesivi vinilici personalizzati Majo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:16px;bottom:16px;background:rgba(245,228,208,0.95);color:#053C36;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600">Accessori con adesivi vinilici ad alta resistenza</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/lifestyle_decor.jpg" alt="Scritta Majo in plastica 3D colorata su una mensola" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Design e decorazione in plastica ecologica</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/lifestyle_presente.jpg" alt="Tazza personalizzata Majo e pacco regalo con adesivo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Tazze e regali su misura</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/lifestyle_caderninho_personalizado.jpg" alt="Quaderno personalizzato con logo Majo e penna" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Quaderni personalizzati</figcaption>
+</figure>
+<figure class="zoom reveal" style="margin:0;position:relative;overflow:hidden;border-radius:28px;aspect-ratio:4/3">
+<img src="assets/lifestyle_lancheira_personalizada.jpg" alt="Lunchbox e borraccia personalizzate con il logo Majo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<figcaption style="position:absolute;left:12px;bottom:12px;background:rgba(245,228,208,0.95);color:#053C36;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600">Borracce e lunchbox personalizzate</figcaption>
+</figure>
+</div>
+
+<div class="reveal" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 460px;min-width:0">
+<ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;font-size:17px">
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#F5E4D0;margin-top:3px" aria-hidden="true"></span><span>Tazze con frasi o illustrazioni su misura</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#F5E4D0;margin-top:3px" aria-hidden="true"></span><span>Borracce in acciaio con il tuo nome</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#F5E4D0;margin-top:3px" aria-hidden="true"></span><span>Oggetti di design e decorazione in plastica ecologica</span></li>
+<li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#F5E4D0;margin-top:3px" aria-hidden="true"></span><span>Accessori personalizzati con adesivi vinilici</span></li>
+</ul>
+<p style="margin:24px 0 0;font-size:19px;font-weight:600">Un regalo perfetto e introvabile nei negozi tradizionali.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- COME FUNZIONA -->
+<section id="come-funziona" class="pat-green">
+<div style="max-width:1200px;margin:0 auto;padding:clamp(72px,10vw,140px) clamp(20px,4vw,48px);box-sizing:border-box">
+<div class="reveal" style="text-align:center;max-width:680px;margin:0 auto 48px;color:#F5E4D0">
+<div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#CDABF7">Come funziona</div>
+<h2 style="margin:12px 0 0;font-family:'Moraine Parnley','Caveat',cursive;font-size:clamp(46px,6vw,80px);line-height:1;font-weight:400">Dall'idea all'oggetto, in <span style="color:#CDABF7">tre passi</span></h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:36px 32px;border:1px solid rgba(5,60,54,.1)">
+<div style="font-size:72px;font-weight:700;line-height:1;color:#CDABF7;letter-spacing:-0.04em">01</div>
+<h3 style="margin:16px 0 8px;font-size:24px;font-weight:600">Raccontaci la tua idea</h3>
+<p style="margin:0;font-size:16px">Scrivici su WhatsApp. Hai un'idea in testa e non la vedi qui? Parliamone: la realizziamo insieme.</p>
+</div>
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:36px 32px;border:1px solid rgba(5,60,54,.1)">
+<div style="font-size:72px;font-weight:700;line-height:1;color:#E6739C;letter-spacing:-0.04em">02</div>
+<h3 style="margin:16px 0 8px;font-size:24px;font-weight:600">La disegniamo insieme</h3>
+<p style="margin:0;font-size:16px">Scegliamo design, colori e materiali: plastica ecologica, vinile, abbigliamento, acciaio. Tutto su misura.</p>
+</div>
+<div class="reveal" style="flex:1 1 300px;background:#FBF3E8;border-radius:28px;padding:36px 32px;border:1px solid rgba(5,60,54,.1)">
+<div style="font-size:72px;font-weight:700;line-height:1;color:#D35A3B;letter-spacing:-0.04em">03</div>
+<h3 style="margin:16px 0 8px;font-size:24px;font-weight:600">La produciamo per te</h3>
+<p style="margin:0;font-size:16px">Produzione on-demand, senza ordine minimo: che siano 5 magliette o una piccola serie per il tuo brand.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA FINALE -->
+<section id="contatto" style="background:#D35A3B;position:relative;overflow:hidden;padding:clamp(48px,8vw,110px) clamp(16px,4vw,48px)">
+<div style="position:relative;max-width:900px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,4vw,56px);box-sizing:border-box;text-align:center;background:#F5E4D0;color:#053C36;border-radius:40px;box-shadow:0 30px 60px rgba(5,60,54,.28)">
+<h2 class="reveal" style="margin:0;font-family:'Moraine Parnley','Caveat',cursive;font-weight:400;font-size:clamp(56px,9vw,120px);line-height:0.95;color:#D35A3B">La tua idea, le nostre mani.</h2>
+<p class="reveal" style="margin:20px 0 0;font-size:clamp(20px,2.4vw,28px);font-weight:600">Creiamo insieme?</p>
+
+<div class="reveal" style="margin-top:40px">
+<div style="font-size:15px;font-weight:500;opacity:0.9">Cosa vuoi creare?</div>
+<div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+<button class="chip" type="button" data-topic="evento" aria-pressed="true">Un evento o una festa</button>
+<button class="chip" type="button" data-topic="business" aria-pressed="false">Il mio business</button>
+<button class="chip" type="button" data-topic="regalo" aria-pressed="false">Un regalo o un oggetto per me</button>
+<button class="chip" type="button" data-topic="altro" aria-pressed="false">Un’idea tutta mia</button>
+
+</div>
+</div>
+
+<div class="reveal" style="margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:16px">
+<a class="btn" id="wa-cta" href="https://wa.me/393339977640" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;min-height:64px;padding:0 36px;border-radius:999px;background:#25D366;color:#053C36;font-weight:700;font-size:20px;text-decoration:none">
+<svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+<span>Scrivici su WhatsApp</span>
+</a>
+<a href="tel:+393339977640" style="color:#053C36;font-size:20px;font-weight:600;text-decoration:none;letter-spacing:0.02em">+39 333 9977 640</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#053C36;color:#F5E4D0">
+<div style="max-width:1200px;margin:0 auto;padding:36px clamp(20px,4vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
+<img src="assets/symbol_cream.png" alt="Creative Majo" style="height:64px;width:auto;display:block">
+<p style="margin:0;font-size:14px;max-width:420px">Studio di design e personalizzazione on-demand. Nessun ordine minimo.</p>
+<a href="tel:+393339977640" style="color:#F5E4D0;font-size:15px;font-weight:600;text-decoration:none">+39 333 9977 640</a>
+</div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="btn pulse" href="https://wa.me/393339977640?text=Ciao%20Majo!%20Vorrei%20informazioni." target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:60;display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 22px;border-radius:999px;background:#25D366;color:#053C36;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 12px 28px rgba(5,60,54,.3)">
+<svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+<span class="fab-label">Scrivici</span>
+</a>
+
+</div>
+<script>
+(function(){
+  var topics={evento:'un evento o una festa',business:'il mio business',regalo:'un regalo o un oggetto personalizzato',altro:'un\u2019idea tutta mia'};
+  var cta=document.getElementById('wa-cta');
+  var chips=document.querySelectorAll('.chip');
+  function pick(t){
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.topic===t?'true':'false');});
+    cta.href='https://wa.me/393339977640?text='+encodeURIComponent('Ciao Majo! Vorrei creare insieme a voi qualcosa per '+topics[t]+'.');
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){pick(c.dataset.topic);});});
+  pick('evento');
+})();
+</script>
+</body>
+</html>
