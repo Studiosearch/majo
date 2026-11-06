@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Majo — Link</title>
+<meta name="description" content="Creative Majo: personalizzazione on-demand per eventi, business e lifestyle. Scrivici su WhatsApp o visita il sito.">
+<meta property="og:title" content="Creative Majo — Link">
+<meta property="og:description" content="Ogni idea merita di prendere forma. Scrivici su WhatsApp o visita il sito.">
+<meta property="og:image" content="https://majo.studiosearch.com.br/assets/symbol_circle.jpg">
+<meta name="theme-color" content="#D35A3B">
+<link rel="icon" type="image/png" href="../assets/symbol_green.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+<style>
+@font-face{font-family:'Moraine Parnley';font-display:swap;src:url('../assets/fonts/MoraineParnley-Regular.woff2') format('woff2'),url('../assets/fonts/MoraineParnley-Regular.ttf') format('truetype')}
+:root{--orange:#D35A3B;--lilac:#CDABF7;--pink:#E6739C;--cream:#F5E4D0;--cream2:#FBF3E8;--ink:#5C2414}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{min-height:100vh;min-height:100dvh;background:var(--orange) url(../assets/pattern_orange.jpg) center/cover no-repeat fixed;color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@supports (-webkit-touch-callout:none){body{background-attachment:scroll}}
+
+/* fita diagonal */
+.ribbon{position:fixed;left:-20%;right:-20%;top:26px;height:30px;background:var(--pink);transform:rotate(-7deg);overflow:hidden;display:flex;align-items:center;z-index:0;opacity:.95}
+.ribbon.b{top:auto;bottom:40px;transform:rotate(6deg);background:var(--lilac)}
+.track{display:flex;white-space:nowrap;animation:marquee 26s linear infinite}
+.ribbon.b .track{animation-direction:reverse}
+.track span{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cream2);padding-right:14px}
+.ribbon.b .track span{color:var(--orange)}
+
+/* moldura rosa com texto */
+.wrap{position:relative;z-index:1;max-width:420px;margin:0 auto;padding:78px 18px 90px}
+.frame{background:var(--pink);border-radius:26px;padding:28px 10px 10px;position:relative;box-shadow:0 18px 50px rgba(92,36,20,.22);animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.frame .edge{position:absolute;left:0;right:0;height:28px;overflow:hidden;display:flex;align-items:center}
+.frame .edge.t{top:0}.frame .edge.btm{bottom:0}
+.frame .edge .track span{font-size:10.5px;color:var(--cream2)}
+.frame.pb{padding-bottom:28px}
+.card{background:var(--cream);border-radius:18px;padding:34px 20px 26px;text-align:center;position:relative;overflow:hidden}
+
+/* arco + logo */
+.arch{width:150px;height:150px;margin:0 auto;border-radius:75px 75px 18px 18px;background:var(--lilac);display:grid;place-items:center;position:relative}
+.arch img{height:92px;width:auto;display:block}
+.blob{position:absolute;width:46px;height:46px;border-radius:58% 42% 55% 45%/50% 60% 40% 50%;background:var(--pink);right:-14px;bottom:-8px}
+.dot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--orange);left:-4px;top:22px}
+
+h1{font-family:'Moraine Parnley',cursive;font-weight:400;font-size:44px;line-height:1.02;margin:22px 0 10px;color:var(--ink)}
+h1 span{color:var(--orange)}
+.tag{margin:0 auto 26px;max-width:290px;font-size:14px;line-height:1.6;font-weight:300}
+
+.links{display:flex;flex-direction:column;gap:10px}
+a.btn{display:flex;align-items:center;gap:12px;min-height:58px;padding:8px 16px 8px 9px;border-radius:999px;background:var(--cream2);border:1.2px solid rgba(211,90,59,.35);color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;text-align:left;transition:transform .25s ease,border-color .25s ease,background .25s ease}
+a.btn:hover{transform:translateY(-2px);border-color:var(--pink);background:#fff8ef}
+a.btn:active{transform:scale(.985)}
+a:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.btn .txt{flex:1}
+.btn small{display:block;font-weight:300;font-size:12px;opacity:.7;margin-top:1px}
+.ico{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--lilac);color:var(--orange)}
+.btn.main{background:var(--orange);border-color:var(--orange);color:var(--cream2)}
+.btn.main:hover{background:#c9502f}
+.btn.main .ico{background:var(--cream2)}
+.go{color:var(--pink);flex:none}
+.btn.main .go{color:var(--lilac)}
+
+.label{display:flex;align-items:center;justify-content:center;gap:10px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin:26px 0 12px;color:var(--orange)}
+.label::before,.label::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--pink)}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cats a{display:block;padding:18px 4px 12px;border-radius:60px 60px 14px 14px;background:var(--cream2);border:1.2px solid rgba(205,171,247,.9);color:var(--ink);text-decoration:none;font-size:11.5px;line-height:1.3;font-weight:300;transition:transform .25s ease,background .25s ease}
+.cats a:hover{transform:translateY(-3px);background:var(--lilac)}
+.cats a b{display:block;font-family:'Moraine Parnley',cursive;font-weight:400;font-size:26px;line-height:1.05;color:var(--orange);margin-bottom:3px}
+.call{display:inline-block;margin-top:24px;color:var(--ink);font-size:13px;text-decoration:none;padding-bottom:2px;border-bottom:1px solid var(--pink)}
+.squig{position:absolute;left:14px;top:18px;width:58px;opacity:.9;transform:rotate(-12deg)}
+
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes rise{from{opacity:0;transform:translateY(20px) rotate(-1deg)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="ribbon" aria-hidden="true"><div class="track" id="r1"></div></div>
+<div class="ribbon b" aria-hidden="true"><div class="track" id="r2"></div></div>
+
+<div class="wrap">
+  <div class="frame pb">
+    <div class="edge t" aria-hidden="true"><div class="track" id="r3"></div></div>
+    <div class="card">
+      <svg class="squig" viewBox="0 0 70 40" fill="none" stroke="#E6739C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 30c8-18 14-18 16-6s8 12 12-2 10-14 14 0 8 12 12 0 6-14 12-10"/></svg>
+      <div class="arch"><img src="../assets/symbol_orange.png" alt="Creative Majo"><span class="blob"></span><span class="dot"></span></div>
+      <h1>La tua idea,<br><span>le nostre mani.</span></h1>
+      <p class="tag">Hai un'idea in testa e non la vedi qui? Parliamone: la realizziamo insieme.</p>
+
+      <div class="links">
+        <a class="btn main" href="https://wa.me/393339977640?text=Ciao%20Majo!%20Vi%20ho%20trovato%20su%20Instagram%20e%20vorrei%20informazioni." target="_blank" rel="noopener">
+          <span class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 20.4l1.3-4.2A8.6 8.6 0 1 1 8 19.3z"/><path d="M9 8.6c.2-.5.6-.6.9-.6h.4c.2 0 .4.1.5.4l.6 1.4c.1.2 0 .4-.1.6l-.5.6c.6 1.2 1.5 2.1 2.7 2.7l.6-.5c.2-.1.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.4c0 .3-.1.7-.6.9-.6.3-1.5.4-2.6-.1a8.4 8.4 0 0 1-4-4c-.5-1.1-.4-2-.1-2.6z"/></svg></span>
+          <span class="txt">Scrivici su WhatsApp<small>Raccontaci la tua idea</small></span>
+          <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn" href="https://majo.studiosearch.com.br/">
+          <span class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3z"/></svg></span>
+          <span class="txt">Visita il sito<small>Tutti i prodotti personalizzati</small></span>
+          <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <p class="label">Cosa vuoi creare?</p>
+      <div class="cats">
+        <a href="https://majo.studiosearch.com.br/#eventi"><b>Eventi</b>feste e momenti</a>
+        <a href="https://majo.studiosearch.com.br/#business"><b>Business</b>il tuo brand</a>
+        <a href="https://majo.studiosearch.com.br/#lifestyle"><b>Lifestyle</b>regali unici</a>
+      </div>
+
+      <a class="call" href="tel:+393339977640">oppure chiamaci · +39 333 997 7640</a>
+    </div>
+    <div class="edge btm" aria-hidden="true"><div class="track" id="r4"></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  function fill(id,word,n){var el=document.getElementById(id);if(!el)return;var h='';for(var i=0;i<n;i++)h+='<span>'+word+'</span>';el.innerHTML=h+h;}
+  fill('r1','Ciao! &nbsp;•&nbsp; Creative Majo &nbsp;•',8);
+  fill('r2','Nessun ordine minimo &nbsp;•',10);
+  fill('r3','Benvenuti &nbsp;•',14);
+  fill('r4','Benvenuti &nbsp;•',14);
+})();
+</script>
+</body>
+</html>
