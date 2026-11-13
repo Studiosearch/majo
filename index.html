@@ -18,6 +18,10 @@ body{margin:0}
 .chip:hover{transform:translateY(-2px)}
 .chip[aria-pressed="true"]{background:#CDABF7;border-color:#CDABF7;font-weight:600}
 .chip:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid #053C36;outline-offset:3px}
+.catbtn{transition:transform .3s ease, box-shadow .3s ease}
+.catbtn:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(5,60,54,.18)}
+.catbtn:hover .arrow{transform:translateX(6px)}
+.catbtn .arrow{transition:transform .3s ease}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Caveat:wght@400;500;700&amp;display=swap">
@@ -301,6 +305,25 @@ Studio di design e personalizzazione on-demand
 </a>
 
 </div>
+
+<div class="reveal" style="margin-top:56px;text-align:center">
+<div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#053C36">Sfoglia i cataloghi</div>
+<p style="margin:8px 0 24px;font-size:17px">Prodotti, prezzi e idee per ogni occasione, in PDF.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;text-align:left">
+<a class="catbtn" href="assets/majo-catalogo-festa.pdf" target="_blank" rel="noopener" style="flex:1 1 260px;display:flex;align-items:center;gap:16px;padding:18px 22px;border-radius:999px;background:#053C36;color:#F5E4D0;text-decoration:none;">
+<span style="flex:none;width:48px;height:48px;border-radius:50%;background:#CDABF7;color:#053C36;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+<span style="flex:1;line-height:1.25"><span style="display:block;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:.8">Catalogo</span><span style="display:block;font-size:18px;font-weight:700">Creative Eventi</span></span>
+<span class="arrow" style="font-weight:600;font-size:20px" aria-hidden="true">→</span></a>
+<a class="catbtn" href="assets/majo-catalogo-business.pdf" target="_blank" rel="noopener" style="flex:1 1 260px;display:flex;align-items:center;gap:16px;padding:18px 22px;border-radius:999px;background:#FBF3E8;color:#053C36;text-decoration:none;border:3px solid #E6739C;">
+<span style="flex:none;width:48px;height:48px;border-radius:50%;background:#E6739C;color:#053C36;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+<span style="flex:1;line-height:1.25"><span style="display:block;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:.8">Catalogo</span><span style="display:block;font-size:18px;font-weight:700">Creative Business</span></span>
+<span class="arrow" style="font-weight:600;font-size:20px" aria-hidden="true">→</span></a>
+<a class="catbtn" href="assets/majo-catalogo-regali.pdf" target="_blank" rel="noopener" style="flex:1 1 260px;display:flex;align-items:center;gap:16px;padding:18px 22px;border-radius:999px;background:#CDABF7;color:#053C36;text-decoration:none;">
+<span style="flex:none;width:48px;height:48px;border-radius:50%;background:#F5E4D0;color:#053C36;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+<span style="flex:1;line-height:1.25"><span style="display:block;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:.8">Catalogo</span><span style="display:block;font-size:18px;font-weight:700">Creative Lifestyle</span></span>
+<span class="arrow" style="font-weight:600;font-size:20px" aria-hidden="true">→</span></a>
+</div>
+</div>
 </section>
 
 <!-- EVENTI -->
@@ -323,6 +346,7 @@ Studio di design e personalizzazione on-demand
 <div style="font-size:18px;font-weight:600">Vuoi 5 magliette per un pigiama party?</div>
 <div style="font-family:'Moraine Parnley','Caveat',cursive;font-size:40px;font-weight:400;color:#D35A3B;line-height:1.1">Lo facciamo!</div>
 </div>
+<div style="margin-top:28px"><a class="btn" href="assets/majo-catalogo-festa.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;background:#CDABF7;color:#053C36;font-weight:600;font-size:16px;text-decoration:none"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>Sfoglia il catalogo Eventi</span></a></div>
 </div>
 
 <div class="gal" style="flex:1.5 1 520px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
@@ -378,6 +402,7 @@ Studio di design e personalizzazione on-demand
 <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E6739C;margin-top:3px" aria-hidden="true"></span><span>Insegne e loghi in rilievo (plastica 3D) per il tuo negozio o bancone</span></li>
 </ul>
 <p style="margin:28px 0 0;font-size:19px;font-weight:600">Produzione on-demand che cresce insieme al tuo business.</p>
+<div style="margin-top:28px"><a class="btn" href="assets/majo-catalogo-business.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;background:#053C36;color:#F5E4D0;font-weight:600;font-size:16px;text-decoration:none"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>Sfoglia il catalogo Business</span></a></div>
 </div>
 
 </div>
@@ -425,6 +450,7 @@ Studio di design e personalizzazione on-demand
 <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#F5E4D0;margin-top:3px" aria-hidden="true"></span><span>Accessori personalizzati con adesivi vinilici</span></li>
 </ul>
 <p style="margin:24px 0 0;font-size:19px;font-weight:600">Un regalo perfetto e introvabile nei negozi tradizionali.</p>
+<div style="margin-top:28px"><a class="btn" href="assets/majo-catalogo-regali.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;background:#053C36;color:#F5E4D0;font-weight:600;font-size:16px;text-decoration:none"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>Sfoglia il catalogo Lifestyle</span></a></div>
 </div>
 </div>
 
